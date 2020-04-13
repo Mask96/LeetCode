@@ -43,5 +43,4 @@ public class evaluateReversePolishNotation {
         return num3;
     }
 
-
 }
