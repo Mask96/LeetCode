@@ -1,47 +1,46 @@
 package com.company;
 
-import java.util.LinkedList;
+import java.util.Stack;
 
 public class evaluateReversePolishNotation {
 
-    public int main(String[] tokens) {
-        LinkedList<String> num = new LinkedList<>();
+    public int evalRPN(String[] tokens) {
+        Stack<Integer> numStack = new Stack<>();
 
         for (int i = 0; i < tokens.length; i++) {
-            if (tokens[i].equals("+") || tokens[i].equals("-") || tokens[i].equals("*") || tokens[i].equals("/")) {
-                String num1 = num.getLast();
-                num.removeLast();
-                String num2 = num.getLast();
-                num.removeLast();
-
-                num.addLast(compute(num1, num2, tokens[i]));
-            } else {
-                num.addLast(tokens[i]);
-            }
+           try{
+               int num = Integer.parseInt(tokens[i]);
+               numStack.push(num);
+           }catch (Exception e){
+               //如果是其他计算符号在parseInt时会异常，进入异常处理程序
+               int b = numStack.pop();
+               int a = numStack.pop();
+               numStack.push(compute(a,b,tokens[i]));
+           }
         }
 
-        return Integer.parseInt(num.getLast());
+        return numStack.pop();
     }
 
-    public String compute(String num1, String num2, String sym) {
+    public int compute(int num1, int num2, String sym) {
         Integer num3;
         switch (sym) {
             case "+":
-                num3 = Integer.parseInt(num1) + Integer.parseInt(num2);
+                num3 = num1 + num2;
                 break;
             case "-":
-                num3 = Integer.parseInt(num1) - Integer.parseInt(num2);
+                num3 = num1 - num2;
                 break;
             case "*":
-                num3 = Integer.parseInt(num1) * Integer.parseInt(num2);
+                num3 = num1 * num2;
                 break;
             case "/":
-                num3 = Integer.parseInt(num1) / Integer.parseInt(num2);
+                num3 = num1 / num2;
                 break;
             default:
                 num3 = 0;
         }
-        return Integer.toString(num3);
+        return num3;
     }
 
 }
