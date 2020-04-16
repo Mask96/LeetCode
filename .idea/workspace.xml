@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a07382-6bb2-41d2-8ee5-f19ae01cd84c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/SortList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/evaluateReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/evaluateReversePolishNotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,21 +84,37 @@
       <updated>1585734139389</updated>
       <workItem from="1585734143073" duration="1678000" />
       <workItem from="1585820486549" duration="1940000" />
+      <workItem from="1586876378753" duration="289000" />
+      <workItem from="1586954889131" duration="1389000" />
+      <workItem from="1587041821394" duration="5517000" />
     </task>
+    <task id="LOCAL-00001" summary="第3题  暂存">
+      <created>1586876470933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586876470933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第3题  暂存" />
+    <option name="LAST_COMMIT_MESSAGE" value="第3题  暂存" />
   </component>
   <component name="WindowStateProjectService">
     <state x="581" y="368" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1585736262204">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="581" y="368" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585736262204" />
-    <state x="423" y="125" key="CommitChangelistDialog2" timestamp="1585736238899">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="483" y="155" key="CommitChangelistDialog2" timestamp="1586876470260">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="423" y="125" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585736238899" />
+    <state x="483" y="155" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1586876470260" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1585734527814">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -119,9 +135,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1585736346392" />
+    <state x="552" y="287" key="Vcs.Push.Dialog.v2" timestamp="1586876473788">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="287" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1586876473788" />
     <state x="217" y="147" key="new project wizard" timestamp="1585735236601">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="217" y="147" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1585735236601" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1587044984661">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1587044984661" />
   </component>
 </project>
