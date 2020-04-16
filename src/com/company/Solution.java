@@ -37,42 +37,52 @@ class Point {
 
 public class Solution {
     public int maxPoints(Point[] points) {
+        if (points.length == 1) {
+            return 1;
+        } else if (points.length == 0) {
+            return 0;
+        }
         int max = 0;
-        for (Point pointA : points) {
+        for (int i = 0; i < points.length; i++) {
+
+            int curMax = 1;
             HashMap<Double, Integer> aMap = new HashMap<>();
             // 重复点
-            int repeat = 1;
+            int repeat = 0;
             // 垂直线点
-            int vertical = 1;
-            for (Point pointB : points) {
-                if (points.length == 1) {
-                    aMap.put(1.0, 1);
-                    break;
-                }
-                if (pointA.x == pointB.x && pointA.y == pointB.y) {
-                    // 两个点重合
-                    repeat++;
-                } else if (pointA.x == pointB.x) {
-                    // 两个点垂直。斜率无法计算
-                    vertical++;
-                } else {
-                    double k = (pointB.y - pointA.y) / (pointB.x - pointA.x);
-                    if (aMap.containsKey(k)) {
-                        int num = aMap.get(k) + 1;
+            int vertical = 0;
+
+            for (int j = 0; j < points.length; j++) {
+                if (i != j) {
+                    double x1 = points[i].x - points[j].x;
+                    double y1 = points[i].y - points[j].y;
+                    if (x1 == 0 && y1 == 0) {
+                        // 两个点重合
+                        repeat++;
+                    } else if (x1 == 0) {
+                        // 两个点垂直。斜率无法计算
+                        if (vertical == 0) {
+                            vertical = 2;
+                        } else {
+                            vertical++;
+                        }
+                        curMax = max(curMax, vertical);
                     } else {
-                        aMap.put(k, 2);
+                        double k = y1 / x1;
+                        if (aMap.containsKey(k)) {
+                            int num = aMap.get(k) + 1;
+                            aMap.put(k, num);
+                        } else {
+                            aMap.put(k, 2);
+                        }
+                        curMax = max(curMax, aMap.get(k));
                     }
                 }
+
             }
 
             // 获取map中最多的值
-            int maxMapNum = 0;
-            for (double k : aMap.keySet()) {
-                maxMapNum = max(maxMapNum, aMap.get(k));
-            }
-            int maxNum = max(repeat, vertical);
-            maxNum = max(maxNum, maxMapNum);
-            max = max(max, maxNum);
+            max = max(max, curMax + repeat);
         }
         return max;
     }
