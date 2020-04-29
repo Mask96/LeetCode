@@ -1,16 +1,8 @@
 package com.company;
 
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
+/**
+ * 在O(n log n)的时间内使用常数级空间复杂度对链表进行排序。
+ */
 public class SortList {
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) {

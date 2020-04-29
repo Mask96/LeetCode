@@ -19,23 +19,7 @@ import static java.lang.Integer.max;
  * +------------->
  * 0  1  2  3  4
  */
-
-class Point {
-    int x;
-    int y;
-
-    Point() {
-        x = 0;
-        y = 0;
-    }
-
-    Point(int a, int b) {
-        x = a;
-        y = b;
-    }
-}
-
-public class Solution {
+public class MaxPointsOnLine {
     public int maxPoints(Point[] points) {
         if (points.length == 1) {
             return 1;
