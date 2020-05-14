@@ -10,17 +10,7 @@ package com.company;
  * @time: 2020/5/6 5:38 下午
  */
 public class ReorderList {
-    public static void main(String[] args) {
-        ListNode a = new ListNode(1);
-        ListNode b = new ListNode(2);
-        ListNode c = new ListNode(3);
-        a.next = b;
-        b.next = c;
-
-     reorderList(a);
-
-    }
-    public static void reorderList(ListNode head) {
+    public void reorderList(ListNode head) {
         if (head == null || head.next == null) {
             return;
         }
