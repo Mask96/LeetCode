@@ -43,7 +43,19 @@ public class CopyListWithRandomPointer138 {
 
         node = head;
         while (node != null) {
-            nodeMap.get(node).next = nodeMap.get(node.next);
+            if (node.next != null) {
+                nodeMap.get(node).next = nodeMap.get(node.next);
+            } else {
+                nodeMap.get(node).next = null;
+            }
+            if (node.random != null) {
+                nodeMap.get(node).random = nodeMap.get(node.random);
+            } else {
+                nodeMap.get(node).random = null;
+            }
+            node = node.next;
         }
+
+        return nodeMap.get(head);
     }
 }
