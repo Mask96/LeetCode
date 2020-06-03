@@ -17,5 +17,26 @@ public class Candy135 {
         int[] num = new int[ratings.length];
         Arrays.fill(num, 1);
 
+        // 正面遍历
+        for (int i = 1; i < ratings.length; i++) {
+            if (ratings[i] > ratings[i - 1]) {
+                // 如果后面人分数比前面高，则需要给后面人更多的糖果
+                num[i] = num[i - 1] + 1;
+            }
+        }
+
+        // 反面遍历
+        for (int i = ratings.length - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1] && num[i] <= num[i + 1]) {
+                // 如果后面人分数比前面高 并且 后面人糖果没比前面人多，则需要给后面人更多的糖果
+                num[i] = num[i + 1] + 1;
+            }
+        }
+
+        int count = 0;
+        for (int a : num) {
+            count = count + a;
+        }
+        return count;
     }
 }
