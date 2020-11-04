@@ -1,4 +1,4 @@
-package com.company;
+package com.company.hot100;
 
 /**
  * @description: 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
@@ -16,6 +16,8 @@ package com.company;
  * @time: 2020/7/6 5:12 下午
  */
 
+
+import com.company.base.ListNode;
 
 /**
  * Definition for singly-linked list.

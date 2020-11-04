@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.Point;
+
 import java.util.HashMap;
 
 import static java.lang.Integer.max;

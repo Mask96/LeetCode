@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.ListNode;
+
 /**
  * @Classname InsertionSortList
  * @Description 使用插入排序对链表进行排序。

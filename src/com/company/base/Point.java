@@ -1,9 +1,9 @@
-package com.company;
+package com.company.base;
 
 
 public class Point {
-    int x;
-    int y;
+    public int x;
+    public int y;
 
     public Point() {
         x = 0;

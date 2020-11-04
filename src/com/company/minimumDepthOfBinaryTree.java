@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.TreeNode;
+
 import java.util.LinkedList;
 
 /**

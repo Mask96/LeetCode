@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.ListNode;
+
 /**
  * @description: 将给定的单链表L： L 0→L 1→…→L n-1→L n,
  * 重新排序为： L 0→L n →L 1→L n-1→L 2→L n-2→…

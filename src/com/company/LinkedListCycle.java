@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.ListNode;
+
 /**
  * @description:判断给定的链表中是否有环
  * @author: Mask

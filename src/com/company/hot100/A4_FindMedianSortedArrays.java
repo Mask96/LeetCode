@@ -1,4 +1,4 @@
-package com.company;
+package com.company.hot100;
 
 import java.util.LinkedList;
 import java.util.List;

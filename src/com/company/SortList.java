@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.base.ListNode;
+
 /**
  * 在O(n log n)的时间内使用常数级空间复杂度对链表进行排序。
  */

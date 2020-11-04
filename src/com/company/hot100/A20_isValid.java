@@ -1,4 +1,4 @@
-package com.company;
+package com.company.hot100;
 
 import java.util.Stack;
 
@@ -14,6 +14,7 @@ import java.util.Stack;
  * @time: 2020/11/4 7:27 下午
  */
 public class A20_isValid {
+    // 更好解法
     public boolean isValidBetter(String s) {
         if (s.isEmpty()) {
             return true;

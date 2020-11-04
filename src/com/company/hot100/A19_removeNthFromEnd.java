@@ -1,4 +1,6 @@
-package com.company;
+package com.company.hot100;
+
+import com.company.base.ListNode;
 
 /**
  * @description: 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
